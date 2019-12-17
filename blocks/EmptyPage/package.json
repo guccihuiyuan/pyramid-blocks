@@ -1,0 +1,27 @@
+{
+  "name": "@umi-block/EmptyPage",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/Index.tsx",
+  "authors": {
+    "name": "ys",
+    "email": "704807396@qq.com"
+  },
+  "scripts": {
+    "dev": "umi dev"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "umi": "^2.9.0",
+    "umi-plugin-block-dev": "^2.0.0",
+    "umi-types": "^0.3.0"
+  },
+  "peerDependencies": {
+    "@ant-design/pro-layout": "^4.5.5"
+  },
+  "blockConfig": {
+    "specVersion": "0.1"
+  },
+  "license": "MIT"
+}
