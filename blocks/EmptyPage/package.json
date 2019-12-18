@@ -1,24 +1,24 @@
 {
-  "name": "@umi-block/EmptyPage",
+  "name": "@pyramid-blocks/EmptyPage",
   "version": "0.0.1",
-  "description": "",
-  "main": "src/Index.tsx",
+  "description": "一个空白的页面，一切都从这里开始！",
   "authors": {
     "name": "ys",
     "email": "704807396@qq.com"
   },
+  "main": "src/Index.tsx",
   "scripts": {
     "dev": "umi dev"
   },
   "dependencies": {
+    "@ant-design/pro-layout": "^4.5.9"
   },
   "devDependencies": {
     "umi": "^2.9.0",
     "umi-plugin-block-dev": "^2.0.0",
-    "umi-types": "^0.3.0"
-  },
-  "peerDependencies": {
-    "@ant-design/pro-layout": "^4.5.5"
+    "umi-types": "^0.3.0",
+    "react": ">=16.0.0",
+    "umi-plugin-react": "^1.13.3"
   },
   "blockConfig": {
     "specVersion": "0.1"
