@@ -1,12 +1,12 @@
 {
-  "name": "@pyramid-blocks/FormBasicForm",
+  "name": "@pyramid-templates/EmptyPage",
   "version": "0.0.1",
   "description": "一个空白的页面，一切都从这里开始！",
   "authors": {
     "name": "ys",
     "email": "704807396@qq.com"
   },
-  "main": "src/Index.tsx",
+  "main": "src/index.tsx",
   "scripts": {
     "dev": "umi dev"
   },
