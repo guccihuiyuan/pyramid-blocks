@@ -10,7 +10,7 @@ const Component: FunctionComponent<IProps> = props => {
 
   return (
     <>
-      Demo！
+      INSERT_BLOCK_PLACEHOLDER:DEMO
     </>
   )
 };
