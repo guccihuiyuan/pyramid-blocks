@@ -1,15 +1,28 @@
 import React from 'react';
+import { Col, Row } from 'antd';
 
 export default function() {
   return (
-    <div>
-      <header>INSERT_BLOCK_PLACEHOLDER:HEADER</header>
-      <div>
-        <main>INSERT_BLOCK_PLACEHOLDER:CONTENT</main>
-        <nav>INSERT_BLOCK_PLACEHOLDER:NAV</nav>
-        <aside>INSERT_BLOCK_PLACEHOLDER:ASIDE</aside>
-      </div>
-      <footer>INSERT_BLOCK_PLACEHOLDER:FOOTER</footer>
-    </div>
+    <Row>
+      <Col
+        span={12}
+        style={{
+          minHeight: 150,
+          padding: 16,
+          borderRight: '1px solid #DDD',
+        }}
+      >
+        INSERT_BLOCK_PLACEHOLDER:Col 12
+      </Col>
+      <Col
+        span={12}
+        style={{
+          minHeight: 150,
+          padding: 16,
+        }}
+      >
+        INSERT_BLOCK_PLACEHOLDER:Col 12
+      </Col>
+    </Row>
   );
 }
