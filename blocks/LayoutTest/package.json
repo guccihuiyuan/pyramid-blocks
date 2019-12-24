@@ -1,0 +1,13 @@
+{
+  "name": "@pyramid-blocks/LayoutTest",
+  "version": "0.0.1",
+  "description": "布局测试",
+  "authors": {
+    "name": "ys",
+    "email": "704807396@qq.com"
+  },
+  "block": {
+    "category": "布局"
+  },
+  "license": "MIT"
+}

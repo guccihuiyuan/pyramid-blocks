@@ -1,11 +1,10 @@
 import React from 'react';
-import styles from './index.less';
 
 export default function() {
   return (
-    <div className={styles.wrapper}>
+    <div>
       <header>INSERT_BLOCK_PLACEHOLDER:HEADER</header>
-      <div className={styles.body}>
+      <div>
         <main>INSERT_BLOCK_PLACEHOLDER:CONTENT</main>
         <nav>INSERT_BLOCK_PLACEHOLDER:NAV</nav>
         <aside>INSERT_BLOCK_PLACEHOLDER:ASIDE</aside>
