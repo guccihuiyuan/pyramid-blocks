@@ -6,5 +6,6 @@
     "name": "ys",
     "email": "704807396@qq.com"
   },
+  "main": "src/index.tsx",
   "license": "MIT"
 }
