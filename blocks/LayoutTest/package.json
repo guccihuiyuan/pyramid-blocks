@@ -7,5 +7,17 @@
     "email": "704807396@qq.com"
   },
   "main": "src/index.tsx",
+  "scripts": {
+    "dev": "umi dev"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "umi": "^2.9.0",
+    "umi-plugin-block-dev": "^2.0.0",
+    "umi-types": "^0.3.0",
+    "react": ">=16.0.0",
+    "umi-plugin-react": "^1.13.3"
+  },
   "license": "MIT"
 }
