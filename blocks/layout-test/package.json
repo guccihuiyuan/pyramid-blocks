@@ -1,5 +1,5 @@
 {
-  "name": "@pyramid-blocks/LayoutTest",
+  "name": "@pyramid-blocks/layout-test",
   "version": "0.0.1",
   "description": "布局测试",
   "authors": {
@@ -11,13 +11,6 @@
     "dev": "umi dev"
   },
   "dependencies": {
-  },
-  "devDependencies": {
-    "umi": "^2.9.0",
-    "umi-plugin-block-dev": "^2.0.0",
-    "umi-types": "^0.3.0",
-    "react": ">=16.0.0",
-    "umi-plugin-react": "^1.13.3"
   },
   "license": "MIT"
 }
