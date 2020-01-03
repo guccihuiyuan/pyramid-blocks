@@ -1,11 +1,12 @@
 {
-  "name": "@pyramid-templates/FormBasicForm",
+  "name": "@pyramid-templates/basic-form",
   "version": "0.0.1",
-  "description": "一个空白的页面，一切都从这里开始！",
+  "description": "表单页用于向用户收集或验证信息，基础表单常用于数据项较少的表单场景。",
   "authors": {
     "name": "ys",
     "email": "704807396@qq.com"
   },
+  "license": "ISC",
   "main": "src/index.tsx",
   "scripts": {
     "dev": "umi dev"
@@ -22,6 +23,5 @@
   },
   "blockConfig": {
     "specVersion": "0.1"
-  },
-  "license": "MIT"
+  }
 }
