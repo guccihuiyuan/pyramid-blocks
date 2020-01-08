@@ -1,7 +1,7 @@
 {
-  "name": "@pyramid-blocks/layout-test",
+  "name": "@pyramid-layouts/grid-basic-1",
   "version": "0.0.1",
-  "description": "布局测试",
+  "description": "栅格布局-1",
   "authors": {
     "name": "ys",
     "email": "704807396@qq.com"
