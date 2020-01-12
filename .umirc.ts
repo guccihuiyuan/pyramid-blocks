@@ -6,7 +6,6 @@ const config: IConfig = {
       layout: process.env.LAYOUT || 'ant-design-pro',
     }],
     ['umi-plugin-react', {
-      'dva': true,
       'antd': true,
     }],
     require.resolve('./plugin'),
