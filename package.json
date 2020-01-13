@@ -8,7 +8,9 @@
     "email": "704807396@qq.com"
   },
   "scripts": {
-    "start": "cross-env UMI_UI=none umi dev"
+    "start": "yarn start:pro",
+    "start:pro": "cross-env UMI_UI=none LAYOUT=ant-design-pro umi dev --port 9200",
+    "start:blank": "cross-env UMI_UI=none LAYOUT=blankLayout umi dev --port 9200"
   },
   "dependencies": {
     "@ant-design/pro-layout": "^4.5.9",
