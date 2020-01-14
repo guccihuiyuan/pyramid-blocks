@@ -3,11 +3,68 @@
   "packageType": "pc",
   "blocks": [
     {
-      "key": "Demo",
-      "name": "Demo",
-      "description": "Demo！",
-      "url": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/blocks/Demo",
-      "img": "https://github.com/guccihuiyuan/pyramid-blocks/blob/master/blocks/Demo/snapshot.png"
+      "key": "button-basic",
+      "name": "button-basic",
+      "description": "按钮有五种类型：主按钮、次按钮、虚线按钮、危险按钮和链接按钮。主按钮在同一个操作区域最多出现一次。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/blocks/button-basic",
+      "previewImg": "",
+      "previewUrl": "/blocks/button-basic"
+    },
+    {
+      "key": "calendar-basic",
+      "name": "calendar-basic",
+      "description": "一个通用的日历面板，支持年/月切换",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/blocks/calendar-basic",
+      "previewImg": "",
+      "previewUrl": "/blocks/calendar-basic"
+    },
+    {
+      "key": "card-basic",
+      "name": "card-basic",
+      "description": "包含标题、内容、操作区域。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/blocks/card-basic",
+      "previewImg": "",
+      "previewUrl": "/blocks/card-basic"
+    },
+    {
+      "key": "carousel-basic",
+      "name": "carousel-basic",
+      "description": "最简单的用法。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/blocks/carousel-basic",
+      "previewImg": "",
+      "previewUrl": "/blocks/carousel-basic"
+    },
+    {
+      "key": "cascader-basic",
+      "name": "cascader-basic",
+      "description": "省市区级联。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/blocks/cascader-basic",
+      "previewImg": "",
+      "previewUrl": "/blocks/cascader-basic"
+    },
+    {
+      "key": "checkbox-basic",
+      "name": "checkbox-basic",
+      "description": "简单的checkbox。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/blocks/checkbox-basic",
+      "previewImg": "",
+      "previewUrl": "/blocks/checkbox-basic"
+    },
+    {
+      "key": "demo",
+      "name": "demo",
+      "description": "demo。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/blocks/demo",
+      "previewImg": "",
+      "previewUrl": "/blocks/demo"
+    },
+    {
+      "key": "demo",
+      "name": "demo",
+      "description": "demo！",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/blocks/demo",
+      "previewImg": "",
+      "previewUrl": "/blocks/demo"
     }
   ],
   "templates": [
