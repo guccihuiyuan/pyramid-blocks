@@ -10,5 +10,70 @@
       "img": "https://github.com/guccihuiyuan/pyramid-blocks/blob/master/blocks/Demo/snapshot.png"
     }
   ],
-  "templates": []
+  "templates": [
+    {
+      "key": "EmptyPage",
+      "name": "空白页面",
+      "description": "一个空白的页面，一切都从这里开始！",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/EmptyPage",
+      "previewImg": "",
+      "previewUrl": "/templates/EmptyPage"
+    },
+    {
+      "key": "403",
+      "name": "Exception403",
+      "description": "403 Forbidden 代表客户端错误，指的是服务器端有能力处理该请求，但是拒绝授权访问，一般是权限异常导致。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/Exception403",
+      "previewImg": "",
+      "previewUrl": "/templates/Exception403"
+    },
+    {
+      "key": "404",
+      "name": "Exception404",
+      "description": "404 Not Found 代表请求失败，请求所希望得到的资源未被在服务器上发现",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/Exception404",
+      "previewImg": "",
+      "previewUrl": "/templates/Exception404"
+    },
+    {
+      "key": "500",
+      "name": "Exception500",
+      "description": "500 Internal Server Error，是表示服务器端错误的响应状态码。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/Exception500",
+      "previewImg": "",
+      "previewUrl": "/templates/Exception500"
+    },
+    {
+      "key": "FormBasicForm",
+      "name": "基础表单页",
+      "description": "表单页用于向用户收集或验证信息，基础表单常用于数据项较少的表单场景。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/FormBasicForm",
+      "previewImg": "",
+      "previewUrl": "/templates/FormBasicForm"
+    },
+    {
+      "key": "ProfileBasic",
+      "name": "基础详情页",
+      "description": "详情页可以向用户展示一个对象完整的描述信息,并且可以对一个对象进行编辑操作。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/ProfileBasic",
+      "previewImg": "",
+      "previewUrl": "/templates/ProfileBasic"
+    },
+    {
+      "key": "ResultFail",
+      "name": "失败页",
+      "description": "告知用户操作后所产生的失败结果，引导用户接下来的行动。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/ResultFail",
+      "previewImg": "",
+      "previewUrl": "/templates/ResultFail"
+    },
+    {
+      "key": "ResultSuccess",
+      "name": "成功页",
+      "description": "告知用户操作后所产生的成功结果，引导用户接下来的行动。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/ResultSuccess",
+      "previewImg": "",
+      "previewUrl": "/templates/ResultSuccess"
+    }
+  ]
 }
