@@ -3,6 +3,7 @@ import { FormattedMessage, formatMessage } from 'umi-plugin-react/locale';
 import React, { Fragment } from 'react';
 
 import { GridContent } from '@ant-design/pro-layout';
+// @ts-ignore
 import styles from './index.less';
 
 const Content = (
