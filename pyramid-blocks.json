@@ -57,14 +57,6 @@
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/blocks/demo",
       "previewImg": "",
       "previewUrl": "/blocks/demo"
-    },
-    {
-      "key": "demo",
-      "name": "demo",
-      "description": "demo！",
-      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/blocks/demo",
-      "previewImg": "",
-      "previewUrl": "/blocks/demo"
     }
   ],
   "templates": [
