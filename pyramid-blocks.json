@@ -1,6 +1,6 @@
 {
-  "packageName": "pyramid-pc-ui",
-  "packageType": "pc",
+  "blockPackageName": "pyramid-ui",
+  "blockPackageType": "pc",
   "blocks": [
     {
       "key": "button-basic",
