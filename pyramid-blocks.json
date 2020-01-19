@@ -1,6 +1,7 @@
 {
   "blockPackageName": "pyramid-ui",
   "blockPackageType": "pc",
+  "blockPackageGitUrl": "https://github.com/guccihuiyuan/pyramid-blocks",
   "category": {
     "blocks": [
       "按钮",
