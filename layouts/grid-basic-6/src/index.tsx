@@ -3,24 +3,36 @@ import { Col, Row } from 'antd';
 
 export default function() {
   return (
-    <Row>
+    <Row gutter={16}>
       <Col span={4}>
-        INSERT_BLOCK_PLACEHOLDER:Col
+        <div style={{height: '60px', lineHeight: '60px', border: '1px dashed gray', textAlign: 'center'}}>
+          INSERT_BLOCK_PLACEHOLDER:Col
+        </div>
       </Col>
       <Col span={4}>
-        INSERT_BLOCK_PLACEHOLDER:Col
+        <div style={{height: '60px', lineHeight: '60px', border: '1px dashed gray', textAlign: 'center'}}>
+          INSERT_BLOCK_PLACEHOLDER:Col
+        </div>
       </Col>
       <Col span={4}>
-        INSERT_BLOCK_PLACEHOLDER:Col
+        <div style={{height: '60px', lineHeight: '60px', border: '1px dashed gray', textAlign: 'center'}}>
+          INSERT_BLOCK_PLACEHOLDER:Col
+        </div>
       </Col>
       <Col span={4}>
-        INSERT_BLOCK_PLACEHOLDER:Col
+        <div style={{height: '60px', lineHeight: '60px', border: '1px dashed gray', textAlign: 'center'}}>
+          INSERT_BLOCK_PLACEHOLDER:Col
+        </div>
       </Col>
       <Col span={4}>
-        INSERT_BLOCK_PLACEHOLDER:Col
+        <div style={{height: '60px', lineHeight: '60px', border: '1px dashed gray', textAlign: 'center'}}>
+          INSERT_BLOCK_PLACEHOLDER:Col
+        </div>
       </Col>
       <Col span={4}>
-        INSERT_BLOCK_PLACEHOLDER:Col
+        <div style={{height: '60px', lineHeight: '60px', border: '1px dashed gray', textAlign: 'center'}}>
+          INSERT_BLOCK_PLACEHOLDER:Col
+        </div>
       </Col>
     </Row>
   );
