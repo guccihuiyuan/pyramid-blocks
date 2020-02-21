@@ -1,5 +1,6 @@
 {
   "blockPackageName": "pyramid-ui",
+  "blockPackageChineseName": "pyramid-ui",
   "blockPackageType": "pc",
   "blockPackageGitUrl": "https://github.com/guccihuiyuan/pyramid-blocks",
   "category": {
