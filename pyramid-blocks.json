@@ -15,12 +15,18 @@
       "多选框"
     ],
     "templates": [
-      "个人中心",
       "空白页",
-      "异常页",
-      "表单页",
-      "详情页",
-      "结果页"
+      "个人中心",
+      "个人设置",
+      "异常",
+      "表单",
+      "高级",
+      "基本",
+      "列表",
+      "搜索",
+      "表格",
+      "详情",
+      "结果"
     ]
   },
   "blocks": [
@@ -97,10 +103,21 @@
       "name": "个人中心",
       "description": "个人中心一般用于暂时用户的基本信息，已经相关的信息展示。",
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/AccountCenter",
-      "previewImg": "",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/AccountCenter/snapshot.png?raw=true",
       "previewUrl": "/templates/AccountCenter",
       "tags": [
         "个人中心"
+      ]
+    },
+    {
+      "key": "AccountSettings",
+      "name": "个人设置",
+      "description": "通常是用于用户设置名称、头像、用途、私密性等信息。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/AccountSettings",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/AccountSettings/snapshot.png?raw=true",
+      "previewUrl": "/templates/AccountSettings",
+      "tags": [
+        "个人设置"
       ]
     },
     {
@@ -108,7 +125,7 @@
       "name": "空白页面",
       "description": "一个空白的页面，一切都从这里开始！",
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/EmptyPage",
-      "previewImg": "",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/EmptyPage/snapshot.png?raw=true",
       "previewUrl": "/templates/EmptyPage",
       "tags": [
         "空白页"
@@ -169,6 +186,18 @@
         "表单页"
       ]
     },
+    {
+      "key": "FormStepForm",
+      "name": "分步表单",
+      "description": "分布表单使用与将一个冗长或用户不熟悉的表单任务分成多个步骤，指导用户完成的场景。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/FormStepForm",
+      "previewImg": "",
+      "previewUrl": "/templates/FormStepForm",
+      "tags": [
+        "表单页"
+      ]
+    },
+
     {
       "key": "ProfileBasic",
       "name": "基础详情页",

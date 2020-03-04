@@ -17,7 +17,7 @@ export interface ModelType {
 }
 
 const Model: ModelType = {
-  namespace: 'formAdvancedForm1',
+  namespace: 'BLOCK_NAME_CAMEL_CASE',
 
   state: {},
 

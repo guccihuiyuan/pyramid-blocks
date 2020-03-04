@@ -1,238 +1,246 @@
-import React, { FunctionComponent, useEffect, useState } from 'react';
+import { InfoCircleOutlined } from '@ant-design/icons';
+import { Form } from '@ant-design/compatible';
+import '@ant-design/compatible/assets/index.css';
+import { Button, Card, DatePicker, Input, InputNumber, Radio, Select, Tooltip } from 'antd';
+import { FormattedMessage, formatMessage } from 'umi-plugin-react/locale';
+import React, { Component } from 'react';
+
+import { Dispatch } from 'redux';
+import { FormComponentProps } from '@ant-design/compatible/es/form';
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
-import { Button, Card, DatePicker, Form, Icon, Input, InputNumber, message, Select, Upload } from 'antd';
-import { FormComponentProps } from 'antd/lib/form';
-import { UploadFile } from 'antd/lib/upload/interface';
+import { connect } from 'dva';
+import styles from './style.less';
 
 const FormItem = Form.Item;
+const { Option } = Select;
 const { RangePicker } = DatePicker;
 const { TextArea } = Input;
 
-interface IProps extends FormComponentProps {
+interface PAGE_NAME_UPPER_CAMEL_CASEProps extends FormComponentProps {
+  submitting: boolean;
+  dispatch: Dispatch<any>;
 }
 
-const Component: FunctionComponent<IProps> = props => {
-  const [submitting, setSubmitting] = useState<boolean>(false);
-  const [selectOptions, setSelectOptions] = useState<any[]>([
-    {
-      name: 'option1',
-      value: '1'
-    },
-    {
-      name: 'option2',
-      value: '2'
-    }
-  ]);
-
-  useEffect(() => {
-
-  }, []);
-
-  const {form, form: { getFieldDecorator } } = props;
-
-  const formItemLayout = {
-    labelCol: {
-      xs: { span: 24 },
-      sm: { span: 7 },
-    },
-    wrapperCol: {
-      xs: { span: 24 },
-      sm: { span: 12 },
-      md: { span: 10 },
-    },
-  };
-
-  const submitFormLayout = {
-    wrapperCol: {
-      xs: { span: 24, offset: 0 },
-      sm: { span: 10, offset: 7 },
-    },
-  };
-
-  const handleBeforeUpload = (file: any) => {
-    // 判断后缀是否符合
-    const arr = file.name.split('.');
-    const suffix = arr[arr.length - 1].toLowerCase();
-    const isTrueType = ['png', 'jpg', 'jpeg'].includes(suffix);
-    if (!isTrueType) {
-      file.status = 'error';
-      message.error('文件格式不符合要求，请重新上传');
-      return false;
-    }
-
-    // 判断文件大小是否超出
-    const exceed = file.size / 1024 <= 300;
-    if (exceed) {
-      file.status = 'error';
-      message.error('文件大小不符合要求，请重新上传');
-      return false;
-    }
-
-    return true;
-  };
-
-  const getUploadValueFromEvent = (e: any) => {
-    if (Array.isArray(e)) {// 这个目前好像没啥用
-      return e;
-    }
-
-    let fileList: any[] = e.fileList;
-
-    // TODO 这里判断文件总数是否超过总大小
-    // if (uploadService.exceedMaxSize(fileList,6)) {
-    //   fileList.pop();
-    //   return fileList;
-    // }
-
-    if (fileList.length > 5) {
-      fileList = fileList.slice(-1);
-    }
-    return fileList;
-  };
-
-  const handleUploadPreview = (file: UploadFile) => {
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
+class PAGE_NAME_UPPER_CAMEL_CASE extends Component<PAGE_NAME_UPPER_CAMEL_CASEProps> {
+  handleSubmit = (e: React.FormEvent) => {
+    const { dispatch, form } = this.props;
     e.preventDefault();
     form.validateFieldsAndScroll((err, values) => {
       if (!err) {
-
+        dispatch({
+          type: 'BLOCK_NAME_CAMEL_CASE/submitRegularForm',
+          payload: values,
+        });
       }
     });
   };
 
-  return (
-    <PageHeaderWrapper>
-      <Card>
-        <Form onSubmit={handleSubmit} style={{ marginTop: 8 }}>
-          <FormItem {...formItemLayout} label='输入框'>
-            {getFieldDecorator('input', {
-              rules: [
-                {
-                  required: true,
-                  message: '必填',
-                },
-              ],
-            })(<Input placeholder='请输入' />)}
-          </FormItem>
-          <FormItem {...formItemLayout} label='输入框'>
-            {getFieldDecorator('select', {
-              rules: [
-                {
-                  required: true,
-                  message: '必填',
-                },
-              ],
-            })(
-              <Select
-                placeholder='请选择'
-              >
-                {selectOptions.map(option => {
-                  return (
-                    <Select.Option value={option.value} key={option.value}>
-                      {option.name}
-                    </Select.Option>
-                  );
-                })}
-              </Select>
-            )}
-          </FormItem>
-          <FormItem {...formItemLayout} label='日期选择框'>
-            {getFieldDecorator('date', {
-              rules: [
-                {
-                  required: true,
-                  message: '必填',
-                },
-              ],
-            })(
-              <RangePicker
-                style={{ width: '100%' }}
-                placeholder={[
-                  '开始日期',
-                  '结束日期',
-                ]}
-              />,
-            )}
-          </FormItem>
-          <FormItem {...formItemLayout} label='多文本输入框'>
-            {getFieldDecorator('textArea', {
-              rules: [
-                {
-                  required: true,
-                  message: '必填',
-                },
-              ],
-            })(
-              <TextArea
-                style={{ minHeight: 32 }}
-                placeholder='请输入'
-                rows={4}
-              />,
-            )}
-          </FormItem>
-          <FormItem
-            {...formItemLayout}
-            label={
-              <span>
-                  数字输入框
-                  <em style={{color: 'rgba(0,0,0,.45)', fontStyle: 'normal'}}>
-                    （选填）
+  render() {
+    const { submitting } = this.props;
+    const {
+      form: { getFieldDecorator, getFieldValue },
+    } = this.props;
+
+    const formItemLayout = {
+      labelCol: {
+        xs: { span: 24 },
+        sm: { span: 7 },
+      },
+      wrapperCol: {
+        xs: { span: 24 },
+        sm: { span: 12 },
+        md: { span: 10 },
+      },
+    };
+
+    const submitFormLayout = {
+      wrapperCol: {
+        xs: { span: 24, offset: 0 },
+        sm: { span: 10, offset: 7 },
+      },
+    };
+    return (
+      <PageHeaderWrapper content={<FormattedMessage id="BLOCK_NAME.basic.description" />}>
+        <Card bordered={false}>
+          <Form onSubmit={this.handleSubmit} hideRequiredMark style={{ marginTop: 8 }}>
+            <FormItem {...formItemLayout} label={<FormattedMessage id="BLOCK_NAME.title.label" />}>
+              {getFieldDecorator('title', {
+                rules: [
+                  {
+                    required: true,
+                    message: formatMessage({ id: 'BLOCK_NAME.title.required' }),
+                  },
+                ],
+              })(<Input placeholder={formatMessage({ id: 'BLOCK_NAME.title.placeholder' })} />)}
+            </FormItem>
+            <FormItem {...formItemLayout} label={<FormattedMessage id="BLOCK_NAME.date.label" />}>
+              {getFieldDecorator('date', {
+                rules: [
+                  {
+                    required: true,
+                    message: formatMessage({ id: 'BLOCK_NAME.date.required' }),
+                  },
+                ],
+              })(
+                <RangePicker
+                  style={{ width: '100%' }}
+                  placeholder={[
+                    formatMessage({ id: 'BLOCK_NAME.placeholder.start' }),
+                    formatMessage({ id: 'BLOCK_NAME.placeholder.end' }),
+                  ]}
+                />,
+              )}
+            </FormItem>
+            <FormItem {...formItemLayout} label={<FormattedMessage id="BLOCK_NAME.goal.label" />}>
+              {getFieldDecorator('goal', {
+                rules: [
+                  {
+                    required: true,
+                    message: formatMessage({ id: 'BLOCK_NAME.goal.required' }),
+                  },
+                ],
+              })(
+                <TextArea
+                  style={{ minHeight: 32 }}
+                  placeholder={formatMessage({ id: 'BLOCK_NAME.goal.placeholder' })}
+                  rows={4}
+                />,
+              )}
+            </FormItem>
+            <FormItem
+              {...formItemLayout}
+              label={<FormattedMessage id="BLOCK_NAME.standard.label" />}
+            >
+              {getFieldDecorator('standard', {
+                rules: [
+                  {
+                    required: true,
+                    message: formatMessage({ id: 'BLOCK_NAME.standard.required' }),
+                  },
+                ],
+              })(
+                <TextArea
+                  style={{ minHeight: 32 }}
+                  placeholder={formatMessage({ id: 'BLOCK_NAME.standard.placeholder' })}
+                  rows={4}
+                />,
+              )}
+            </FormItem>
+            <FormItem
+              {...formItemLayout}
+              label={
+                <span>
+                  <FormattedMessage id="BLOCK_NAME.client.label" />
+                  <em className={styles.optional}>
+                    <FormattedMessage id="BLOCK_NAME.form.optional" />
+                    <Tooltip title={<FormattedMessage id="BLOCK_NAME.label.tooltip" />}>
+                      <InfoCircleOutlined style={{ marginRight: 4 }} />
+                    </Tooltip>
                   </em>
                 </span>
-            }
-          >
-            {getFieldDecorator('inputNumber')(
-              <InputNumber
-                placeholder='请输入'
-                min={0}
-                max={100}
-              />,
-            )}
-            <span className="ant-form-text">%</span>
-          </FormItem>
-          <FormItem {...formItemLayout} label='文件上传'>
-            {getFieldDecorator('upload', {
-              valuePropName: 'fileList',
-              getValueFromEvent: getUploadValueFromEvent,
-              rules: [
-                {
-                  required: true,
-                  message: '必填',
-                },
-              ],
-            })(
-              <Upload
-                name="file"
-                accept="*"
-                action={''}
-                listType="picture-card"
-                beforeUpload={file => handleBeforeUpload(file)}
-                onPreview={handleUploadPreview}
-                headers={{ Authorization: '' }}
-              >
-                {!form.getFieldValue('upload') || form.getFieldValue('upload').length < 5 ? (
-                  <div>
-                    <Icon type="plus" />
-                    <div className="ant-upload-text">上传</div>
-                  </div>
-                ): null}
-              </Upload>
-            )}
-          </FormItem>
-          <FormItem {...submitFormLayout} style={{ marginTop: 32 }}>
-            <Button type="primary" htmlType="submit" loading={submitting}>
-              提交
-            </Button>
-            <Button style={{ marginLeft: 8 }}>
-              保存
-            </Button>
-          </FormItem>
-        </Form>
-      </Card>
-    </PageHeaderWrapper>
-  )
-};
+              }
+            >
+              {getFieldDecorator('client')(
+                <Input placeholder={formatMessage({ id: 'BLOCK_NAME.client.placeholder' })} />,
+              )}
+            </FormItem>
+            <FormItem
+              {...formItemLayout}
+              label={
+                <span>
+                  <FormattedMessage id="BLOCK_NAME.invites.label" />
+                  <em className={styles.optional}>
+                    <FormattedMessage id="BLOCK_NAME.form.optional" />
+                  </em>
+                </span>
+              }
+            >
+              {getFieldDecorator('invites')(
+                <Input placeholder={formatMessage({ id: 'BLOCK_NAME.invites.placeholder' })} />,
+              )}
+            </FormItem>
+            <FormItem
+              {...formItemLayout}
+              label={
+                <span>
+                  <FormattedMessage id="BLOCK_NAME.weight.label" />
+                  <em className={styles.optional}>
+                    <FormattedMessage id="BLOCK_NAME.form.optional" />
+                  </em>
+                </span>
+              }
+            >
+              {getFieldDecorator('weight')(
+                <InputNumber
+                  placeholder={formatMessage({ id: 'BLOCK_NAME.weight.placeholder' })}
+                  min={0}
+                  max={100}
+                />,
+              )}
+              <span className="ant-form-text">%</span>
+            </FormItem>
+            <FormItem
+              {...formItemLayout}
+              label={<FormattedMessage id="BLOCK_NAME.public.label" />}
+              help={<FormattedMessage id="BLOCK_NAME.label.help" />}
+            >
+              <div>
+                {getFieldDecorator('public', {
+                  initialValue: '1',
+                })(
+                  <Radio.Group>
+                    <Radio value="1">
+                      <FormattedMessage id="BLOCK_NAME.radio.public" />
+                    </Radio>
+                    <Radio value="2">
+                      <FormattedMessage id="BLOCK_NAME.radio.partially-public" />
+                    </Radio>
+                    <Radio value="3">
+                      <FormattedMessage id="BLOCK_NAME.radio.private" />
+                    </Radio>
+                  </Radio.Group>,
+                )}
+                <FormItem style={{ marginBottom: 0 }}>
+                  {getFieldDecorator('publicUsers')(
+                    <Select
+                      mode="multiple"
+                      placeholder={formatMessage({ id: 'BLOCK_NAME.publicUsers.placeholder' })}
+                      style={{
+                        margin: '8px 0',
+                        display: getFieldValue('public') === '2' ? 'block' : 'none',
+                      }}
+                    >
+                      <Option value="1">
+                        <FormattedMessage id="BLOCK_NAME.option.A" />
+                      </Option>
+                      <Option value="2">
+                        <FormattedMessage id="BLOCK_NAME.option.B" />
+                      </Option>
+                      <Option value="3">
+                        <FormattedMessage id="BLOCK_NAME.option.C" />
+                      </Option>
+                    </Select>,
+                  )}
+                </FormItem>
+              </div>
+            </FormItem>
+            <FormItem {...submitFormLayout} style={{ marginTop: 32 }}>
+              <Button type="primary" htmlType="submit" loading={submitting}>
+                <FormattedMessage id="BLOCK_NAME.form.submit" />
+              </Button>
+              <Button style={{ marginLeft: 8 }}>
+                <FormattedMessage id="BLOCK_NAME.form.save" />
+              </Button>
+            </FormItem>
+          </Form>
+        </Card>
+      </PageHeaderWrapper>
+    );
+  }
+}
 
-export default Form.create<IProps>({})(Component);
+export default Form.create<PAGE_NAME_UPPER_CAMEL_CASEProps>()(
+  connect(({ loading }: { loading: { effects: { [key: string]: boolean } } }) => ({
+    submitting: loading.effects['BLOCK_NAME_CAMEL_CASE/submitRegularForm'],
+  }))(PAGE_NAME_UPPER_CAMEL_CASE),
+);

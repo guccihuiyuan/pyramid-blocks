@@ -1,17 +1,18 @@
 {
-  "name": "@pyramid-templates/empty",
+  "name": "@umi-block/empty",
   "version": "0.0.1",
   "description": "一个空白的页面，一切都从这里开始！",
-  "authors": {
-    "name": "ys",
-    "email": "704807396@qq.com"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umijs/umi-blocks/ant-design-pro/empty"
   },
   "license": "ISC",
-  "main": "src/index.tsx",
+  "main": "src/index.js",
   "scripts": {
     "dev": "umi dev"
   },
-  "dependencies": {
+  "peerDependencies": {
+    "@ant-design/pro-layout": "^4.5.5"
   },
   "blockConfig": {
     "specVersion": "0.1"

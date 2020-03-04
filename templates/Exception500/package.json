@@ -7,12 +7,14 @@
     "url": "https://github.com/ant-design/pro-blocks/tree/master/Exception500"
   },
   "license": "MIT",
-  "main": "src/index.tsx",
+  "main": "src/index.js",
   "scripts": {
     "dev": "umi dev"
   },
   "dependencies": {
-    "classnames": "^2.2.6"
+    "classnames": "^2.2.6",
+    "dva": "^2.4.0",
+    "umi-request": "^1.0.8"
   },
   "blockConfig": {
     "specVersion": "0.1"
