@@ -15,6 +15,7 @@
       "多选框"
     ],
     "templates": [
+      "个人中心",
       "空白页",
       "异常页",
       "表单页",
@@ -57,17 +58,6 @@
       ]
     },
     {
-      "key": "carousel-basic",
-      "name": "carousel-basic",
-      "description": "最简单的用法。",
-      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/blocks/carousel-basic",
-      "previewImg": "",
-      "previewUrl": "/blocks/carousel-basic",
-      "tags": [
-        "走马灯"
-      ]
-    },
-    {
       "key": "cascader-basic",
       "name": "cascader-basic",
       "description": "省市区级联。",
@@ -76,6 +66,17 @@
       "previewUrl": "/blocks/cascader-basic",
       "tags": [
         "级联选择"
+      ]
+    },
+    {
+      "key": "carousel-basic",
+      "name": "carousel-basic",
+      "description": "最简单的用法。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/blocks/carousel-basic",
+      "previewImg": "",
+      "previewUrl": "/blocks/carousel-basic",
+      "tags": [
+        "走马灯"
       ]
     },
     {
@@ -88,18 +89,20 @@
       "tags": [
         "多选框"
       ]
-    },
-    {
-      "key": "demo",
-      "name": "demo",
-      "description": "demo。",
-      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/blocks/demo",
-      "previewImg": "",
-      "previewUrl": "/blocks/demo",
-      "tags": []
     }
   ],
   "templates": [
+    {
+      "key": "AccountCenter",
+      "name": "个人中心",
+      "description": "个人中心一般用于暂时用户的基本信息，已经相关的信息展示。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/AccountCenter",
+      "previewImg": "",
+      "previewUrl": "/templates/AccountCenter",
+      "tags": [
+        "个人中心"
+      ]
+    },
     {
       "key": "EmptyPage",
       "name": "空白页面",
@@ -151,6 +154,17 @@
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/FormBasicForm",
       "previewImg": "",
       "previewUrl": "/templates/FormBasicForm",
+      "tags": [
+        "表单页"
+      ]
+    },
+    {
+      "key": "FormAdvancedForm",
+      "name": "高级表单",
+      "description": "高级表单常适用于一次性输入和提交大批量数据的场景。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/FormAdvancedForm",
+      "previewImg": "",
+      "previewUrl": "/templates/FormAdvancedForm",
       "tags": [
         "表单页"
       ]
