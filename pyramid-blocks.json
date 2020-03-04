@@ -15,9 +15,9 @@
       "多选框"
     ],
     "templates": [
-      "空白页",
       "个人中心",
       "个人设置",
+      "空白页",
       "异常",
       "表单",
       "高级",
@@ -103,7 +103,7 @@
       "name": "个人中心",
       "description": "个人中心一般用于暂时用户的基本信息，已经相关的信息展示。",
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/AccountCenter",
-      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/AccountCenter/snapshot.png?raw=true",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/AccountCenter/snapshot.png?raw=true",
       "previewUrl": "/templates/AccountCenter",
       "tags": [
         "个人中心"
@@ -114,7 +114,7 @@
       "name": "个人设置",
       "description": "通常是用于用户设置名称、头像、用途、私密性等信息。",
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/AccountSettings",
-      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/AccountSettings/snapshot.png?raw=true",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/AccountSettings/snapshot.png?raw=true",
       "previewUrl": "/templates/AccountSettings",
       "tags": [
         "个人设置"
@@ -125,7 +125,7 @@
       "name": "空白页面",
       "description": "一个空白的页面，一切都从这里开始！",
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/EmptyPage",
-      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/EmptyPage/snapshot.png?raw=true",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/EmptyPage/snapshot.png?raw=true",
       "previewUrl": "/templates/EmptyPage",
       "tags": [
         "空白页"
@@ -136,10 +136,10 @@
       "name": "Exception403",
       "description": "403 Forbidden 代表客户端错误，指的是服务器端有能力处理该请求，但是拒绝授权访问，一般是权限异常导致。",
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/Exception403",
-      "previewImg": "",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/Exception403/snapshot.png?raw=true",
       "previewUrl": "/templates/Exception403",
       "tags": [
-        "异常页"
+        "异常"
       ]
     },
     {
@@ -147,10 +147,10 @@
       "name": "Exception404",
       "description": "404 Not Found 代表请求失败，请求所希望得到的资源未被在服务器上发现",
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/Exception404",
-      "previewImg": "",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/Exception404/snapshot.png?raw=true",
       "previewUrl": "/templates/Exception404",
       "tags": [
-        "异常页"
+        "异常"
       ]
     },
     {
@@ -158,10 +158,10 @@
       "name": "Exception500",
       "description": "500 Internal Server Error，是表示服务器端错误的响应状态码。",
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/Exception500",
-      "previewImg": "",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/Exception500/snapshot.png?raw=true",
       "previewUrl": "/templates/Exception500",
       "tags": [
-        "异常页"
+        "异常"
       ]
     },
     {
@@ -169,10 +169,11 @@
       "name": "基础表单页",
       "description": "表单页用于向用户收集或验证信息，基础表单常用于数据项较少的表单场景。",
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/FormBasicForm",
-      "previewImg": "",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/FormBasicForm/snapshot.png?raw=true",
       "previewUrl": "/templates/FormBasicForm",
       "tags": [
-        "表单页"
+        "表单",
+        "基本"
       ]
     },
     {
@@ -180,10 +181,11 @@
       "name": "高级表单",
       "description": "高级表单常适用于一次性输入和提交大批量数据的场景。",
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/FormAdvancedForm",
-      "previewImg": "",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/FormAdvancedForm/snapshot.png?raw=true",
       "previewUrl": "/templates/FormAdvancedForm",
       "tags": [
-        "表单页"
+        "表单",
+        "高级"
       ]
     },
     {
@@ -191,10 +193,94 @@
       "name": "分步表单",
       "description": "分布表单使用与将一个冗长或用户不熟悉的表单任务分成多个步骤，指导用户完成的场景。",
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/FormStepForm",
-      "previewImg": "",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/FormStepForm/snapshot.png?raw=true",
       "previewUrl": "/templates/FormStepForm",
       "tags": [
-        "表单页"
+        "表单"
+      ]
+    },
+
+    {
+      "key": "ListBasicList",
+      "name": "标准列表",
+      "description": "用于陈列一类事务性主题，用户常常将这个页面当做开始事务的入口，主要以浏览方式寻找条目。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/ListBasicList",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/ListBasicList/snapshot.png?raw=true",
+      "previewUrl": "/templates/ListBasicList",
+      "tags": [
+        "列表",
+        "基本"
+      ]
+    },
+    {
+      "key": "ListCardList",
+      "name": "卡片列表",
+      "description": "卡片组成的列表，一般用于展示有图的列表，更加美观。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/ListCardList",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/ListCardList/snapshot.png?raw=true",
+      "previewUrl": "/templates/ListCardList",
+      "tags": [
+        "列表"
+      ]
+    },
+    {
+      "key": "ListSearch",
+      "name": "搜索列表",
+      "description": "一个基本多标签页面，用于展示搜索列表。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/ListSearch",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/ListSearch/snapshot.png?raw=true",
+      "previewUrl": "/templates/ListSearch",
+      "tags": [
+        "列表",
+        "搜索"
+      ]
+    },
+    {
+      "key": "ListSearchApplications",
+      "name": "搜索列表（应用）",
+      "description": "常用于陈列某一主题下的大量条目，并提供丰富的数据筛选功能帮助用户匹配出需要的数据自己。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/ListSearchApplications",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/ListSearchApplications/snapshot.png?raw=true",
+      "previewUrl": "/templates/ListSearchApplications",
+      "tags": [
+        "列表",
+        "搜索"
+      ]
+    },
+    {
+      "key": "ListSearchArticles",
+      "name": "搜索列表（文章）",
+      "description": "常用于陈列某一主题下的大量条目，并提供丰富的数据筛选功能帮助用户匹配出需要的数据自己。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/ListSearchArticles",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/ListSearchArticles/snapshot.png?raw=true",
+      "previewUrl": "/templates/ListSearchArticles",
+      "tags": [
+        "列表",
+        "搜索"
+      ]
+    },
+    {
+      "key": "ListSearchProjects",
+      "name": "搜索列表（项目）",
+      "description": "常用于陈列某一主题下的大量条目，并提供丰富的数据筛选功能帮助用户匹配出需要的数据自己。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/ListSearchProjects",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/ListSearchProjects/snapshot.png?raw=true",
+      "previewUrl": "/templates/ListSearchProjects",
+      "tags": [
+        "列表",
+        "搜索"
+      ]
+    },
+    {
+      "key": "ListTableList",
+      "name": "搜索列表（项目）",
+      "description": "一个标准的表格增删改查页面，可以派生出百分之八十的后台页面。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/ListTableList",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/ListTableList/snapshot.png?raw=true",
+      "previewUrl": "/templates/ListTableList",
+      "tags": [
+        "列表",
+        "表格"
       ]
     },
 
@@ -203,10 +289,23 @@
       "name": "基础详情页",
       "description": "详情页可以向用户展示一个对象完整的描述信息,并且可以对一个对象进行编辑操作。",
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/ProfileBasic",
-      "previewImg": "",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/ProfileBasic/snapshot.png?raw=true",
       "previewUrl": "/templates/ProfileBasic",
       "tags": [
-        "详情页"
+        "详情",
+        "基本"
+      ]
+    },
+    {
+      "key": "ProfileAdvanced",
+      "name": "高级详情页",
+      "description": "一个复杂的详情页，可以展示一个对象的基本信息和其相关的新息和操作。",
+      "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/ProfileAdvanced",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/ProfileAdvanced/snapshot.png?raw=true",
+      "previewUrl": "/templates/ProfileAdvanced",
+      "tags": [
+        "详情",
+        "高级"
       ]
     },
     {
@@ -214,10 +313,10 @@
       "name": "失败页",
       "description": "告知用户操作后所产生的失败结果，引导用户接下来的行动。",
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/ResultFail",
-      "previewImg": "",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/ResultFail/snapshot.png?raw=true",
       "previewUrl": "/templates/ResultFail",
       "tags": [
-        "结果页"
+        "结果"
       ]
     },
     {
@@ -225,10 +324,10 @@
       "name": "成功页",
       "description": "告知用户操作后所产生的成功结果，引导用户接下来的行动。",
       "gitUrl": "https://github.com/guccihuiyuan/pyramid-blocks/tree/master/templates/ResultSuccess",
-      "previewImg": "",
+      "previewImg": "https://raw.githubusercontent.com/guccihuiyuan/pyramid-blocks/master/templates/ResultSuccess/snapshot.png?raw=true",
       "previewUrl": "/templates/ResultSuccess",
       "tags": [
-        "结果页"
+        "结果"
       ]
     }
   ]
